@@ -1,5 +1,10 @@
 <mat-card class="home mat-elevation-z3">
     <mat-card-title class="title">Opa, tudo bom?!</mat-card-title>
-    <mat-card-subtitle class="subtitle"> Cadastre suas séries à vontade! Mandar ver!</mat-card-subtitle>
+    <mat-card-subtitle class="subtitle"> Cadastre suas séries à vontade! Manda ver!</mat-card-subtitle>
+    
+    <button mat-raised-button (click)="goToCreateSerie()" color="primary"> 
+        Nova Série
+    </button>
+    <app-series-read></app-series-read>
 </mat-card>
 

@@ -1,3 +1,6 @@
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { SeriesReadComponent } from './components/series/series-read/series-read.component';
+import { SeriesRead2Component } from './components/series/series-read2/series-read2.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +15,20 @@ import { MatSidenavModule} from '@angular/material/sidenav'
 import { MatCardModule} from '@angular/material/card'
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
-import { SeriesCrudComponent } from './views/series-crud/series-crud.component' 
+import { SeriesCrudComponent } from './views/series-crud/series-crud.component';
+import { RedDirective } from './directives/red.directive';
+import { ForDirective } from './directives/for.directive';
+import { SeriesCreateComponent } from './components/series/series-create/series-create.component' 
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table'  
+
+
+
 
 
 
@@ -23,7 +39,12 @@ import { SeriesCrudComponent } from './views/series-crud/series-crud.component'
     FooterComponent,
     NavComponent,
     HomeComponent,
-    SeriesCrudComponent
+    SeriesCrudComponent,
+    RedDirective,
+    ForDirective,
+    SeriesCreateComponent,
+    SeriesReadComponent,
+    SeriesRead2Component
   ],
   imports: [
     BrowserModule,
@@ -32,7 +53,15 @@ import { SeriesCrudComponent } from './views/series-crud/series-crud.component'
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
