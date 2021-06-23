@@ -10,14 +10,13 @@ import { Serie } from '../serie.module';
 export class SeriesReadComponent implements OnInit {
 
   series: Serie[]
-  displayedColumns = ['id', 'name', 'nota']
+  displayedColumns = ['id', 'name', 'nota', 'action']
 
   constructor(private serieService: SeriesService) { }
 
   ngOnInit(): void {
     this.serieService.read().subscribe(series => {
-      this.series = series;    
-      // console.log(series)  
+      this.series = series          
     })
   }
 

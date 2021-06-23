@@ -1,6 +1,6 @@
+import { SeriesUpdateComponent } from './components/series/series-update/series-update.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { SeriesReadComponent } from './components/series/series-read/series-read.component';
-import { SeriesRead2Component } from './components/series/series-read2/series-read2.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -26,9 +26,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table'  
-
-
-
+import { SeriesDeleteComponent } from './components/series/series-delete/series-delete.component';
 
 
 
@@ -44,7 +42,8 @@ import { MatTableModule } from '@angular/material/table'
     ForDirective,
     SeriesCreateComponent,
     SeriesReadComponent,
-    SeriesRead2Component
+    SeriesUpdateComponent,
+    SeriesDeleteComponent    
   ],
   imports: [
     BrowserModule,
